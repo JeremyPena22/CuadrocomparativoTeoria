@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro Comparativo de Tecnologías Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0c0b0c;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #4118af;
+            color: white;
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .similarities-differences {
+            margin-top: 20px;
+        }
+
+        .similarities, .differences {
+            padding: 15px;
+            background-color: #e8f5e9;
+            border-left: 5px solid #4118af;
+            margin-bottom: 15px;
+        }
+
+        .differences {
+            background-color: #fce4ec;
+            border-left: 5px solid #90f50c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cuadro Comparativo: JQuery, AngularJS, React y AJAX(Jeremy Peña)</h1>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnología</th>
+                    <th>Principales Comandos</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>JQuery</td>
+                    <td>
+                        <ul>
+                            <li><code>$(selector).action()</code>: Selección y manipulación.</li>
+                            <li><code>.hide()</code> / <code>.show()</code>: Mostrar/ocultar elementos.</li>
+                            <li><code>.ajax()</code>: Manejo de solicitudes AJAX.</li>
+                        </ul>
+                    </td>
+                    <td>Biblioteca de JavaScript para simplificar DOM, eventos y AJAX.</td>
+                </tr>
+                <tr>
+                    <td>AngularJS</td>
+                    <td>
+                        <ul>
+                            <li><code>ng-model</code>: Enlace de datos bidireccional.</li>
+                            <li><code>ng-repeat</code>: Iteración de datos.</li>
+                            <li><code>$http</code>: Solicitudes HTTP.</li>
+                        </ul>
+                    </td>
+                    <td>Framework estructurado para crear aplicaciones web dinámicas.</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>
+                        <ul>
+                            <li><code>React.createElement()</code>: Crear elementos React.</li>
+                            <li><code>useState()</code>: Manejo del estado funcional.</li>
+                            <li><code>useEffect()</code>: Manejo de efectos secundarios.</li>
+                        </ul>
+                    </td>
+                    <td>Biblioteca para construir interfaces de usuario basadas en componentes.</td>
+                </tr>
+                <tr>
+                    <td>AJAX</td>
+                    <td>
+                        <ul>
+                            <li><code>XMLHttpRequest()</code>: Solicitudes HTTP asincrónicas.</li>
+                            <li><code>.open()</code> / <code>.send()</code>: Configurar y enviar solicitudes.</li>
+                            <li><code>fetch()</code>: Manejo moderno de solicitudes HTTP.</li>
+                        </ul>
+                    </td>
+                    <td>Técnica para cargar datos de servidores de manera asíncrona sin recargar la página.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="similarities-differences">
+            <div class="similarities">
+                <h2>Similitudes</h2>
+                <ul>
+                    <li>JQuery, AngularJS, React y AJAX permiten trabajar con solicitudes HTTP para interacción con servidores.</li>
+                    <li>Son compatibles con la mayoría de navegadores modernos.</li>
+                    <li>Facilitan la creación de experiencias dinámicas e interactivas en la web.</li>
+                </ul>
+            </div>
+
+            <div class="differences">
+                <h2>Diferencias</h2>
+                <ul>
+                    <li>JQuery es una biblioteca ligera; AngularJS y React son más complejos y orientados a SPA (aplicaciones de página única).</li>
+                    <li>React utiliza un enfoque basado en componentes y AngularJS se basa en MVC (Modelo-Vista-Controlador).</li>
+                    <li>AJAX no es una tecnología independiente, sino una técnica utilizada en combinación con otros.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
